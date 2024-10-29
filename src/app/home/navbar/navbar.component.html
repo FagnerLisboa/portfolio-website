@@ -1,0 +1,13 @@
+<header class="header">
+    <nav class="nav" [class.active]="isNavActive">
+        <a routerLink="/" class="logo">FL</a>
+        <button class="hamburger" (click)="toggleNav()">
+            <span></span>
+        </button>
+        <ul class="nav-list">
+            <li><a routerLink="about">Sobre</a></li>
+            <li><a routerLink="project">Projetos</a></li>
+            <li><a routerLink="contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>

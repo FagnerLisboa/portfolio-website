@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { NavbarComponent } from './home/navbar/navbar.component';
+import { TextRotateDirective } from './text-rotate.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     ProjectsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent,
+    TextRotateDirective
   ],
   imports: [
     BrowserModule,
