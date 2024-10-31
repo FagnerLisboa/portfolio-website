@@ -95,6 +95,21 @@
     color: rgb(255, 255, 255, .8);
 }
 
+.header-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Pode ser ajustado conforme necessário */
+    height: 50vh;
+}
+
+.header-image img {
+    max-width: 100%; /* Limita a largura da imagem para manter a proporção */
+    max-height: 100%; /* Limita a altura da imagem para manter a proporção */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+    opacity: 0.8;
+}
+
 .social-media-links {
     height: 100vh;
     position: absolute;
@@ -110,7 +125,6 @@
 .social-media {
     color: white;
     width: 21px;
-    ;
     opacity: .6;
     margin: 8px;
     transition: all .4s ease;
