@@ -585,6 +585,7 @@ body {
     height: 380px;
     padding: 30px;
     border-radius: 40px;
+    display: inline;
 }
 
 .about-img {
