@@ -1346,6 +1346,7 @@ form button:hover {
     font-weight: 400;
     color: whitesmoke;
     padding: 30px;
+    text-align: center;
 }
 
 .contect-info-content-line {
