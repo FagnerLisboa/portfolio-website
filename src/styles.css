@@ -1,13 +1,13 @@
 @import 'normalize.css';
 @import 'typography.css';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
     padding: 0%;
@@ -90,138 +90,6 @@ body {
     display: block;
 }
 
-#navigation-content {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 5;
-    background-color: #020202;
-    transform: translateY(-200%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#navigation-bar {
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    z-index: 3;
-    padding: 10px;
-    background: transparent;
-    overflow: hidden;
-}
-
-.menubar {
-    position: absolute;
-    right: 4%;
-    top: 40%;
-    cursor: pointer;
-    opacity: .8;
-    transition: all .4s ease;
-}
-
-.menubar span {
-    position: relative;
-    background-color: transparent;
-    height: 2px;
-    width: 20px;
-    display: block;
-    margin: 6px;
-    border-radius: 20px;
-}
-
-.menubar .first-span {
-    width: 35px;
-}
-
-.menubar .first-span::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    top: 0;
-    right: 0;
-    background-color: whitesmoke;
-    transition: all .5s ease;
-
-}
-
-.menubar .second-span {
-    width: 35px;
-}
-
-.menubar .second-span::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 75%;
-    top: 0;
-    right: 0;
-    background-color: whitesmoke;
-    transition: all .3s ease;
-}
-
-.menubar .third-span {
-    width: 35px;
-}
-
-.menubar .third-span::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    background-color: whitesmoke;
-    transition: all .3s ease;
-}
-
-.menubar:hover .second-span::before,
-.menubar:hover .first-span::before {
-    width: 100%;
-}
-
-.menubar:hover {
-    opacity: 1;
-}
-
-.close-first,
-.close-second {
-    height: 2px;
-    width: 35px;
-    background-color: whitesmoke;
-    display: block;
-    margin: 4px;
-    cursor: pointer;
-    padding: 1px;
-    border-radius: 20px;
-}
-
-.close-first {
-    transform: rotate(45deg);
-}
-
-.close-second {
-    transform: rotate(-45deg);
-}
-
-.navigation-close {
-    position: absolute;
-    top: 6%;
-    right: 4%;
-    padding: 10px;
-    cursor: pointer;
-    transition: all.3s ease;
-    opacity: .8;
-}
-
-.navigation-close:hover {
-    opacity: 1;
-    transform: rotate(90deg);
-}
-
 .logo img {
     height: 80px;
     position: absolute;
@@ -234,21 +102,6 @@ body {
 }
 
 .logo img:hover {
-    opacity: 1;
-    transform: rotate(-45deg);
-}
-
-#navigation-bar img {
-    height: 80px;
-    position: absolute;
-    ;
-    top: 15%;
-    left: 2.5%;
-    opacity: .8;
-    transition: all .4s ease;
-}
-
-#navigation-bar img:hover {
     opacity: 1;
     transform: rotate(-45deg);
 }
@@ -364,53 +217,6 @@ body {
 .social-media:hover {
     opacity: 1;
     transform: scale(1.1);
-}
-
-.navigation-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: poppins;
-}
-
-.navigation-links a {
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    opacity: .7;
-    transition: all .4s ease;
-}
-
-.navigation-links a:hover {
-    opacity: 1;
-}
-
-.navigation-links a::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-    transform: translate(-50%, -50%);
-    align-items: center;
-    font-size: 5em;
-    font-weight: 400;
-    font-family: monoton;
-    color: rgb(255, 255, 255, .1);
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0;
-    letter-spacing: 100px;
-    transition: all .4s ease;
-}
-
-.navigation-links a:hover::before {
-    content: attr(data-text);
-    opacity: 1;
-    letter-spacing: 10px;
 }
 
 .contact {
@@ -675,7 +481,6 @@ body {
     width: 28%;
     margin: 1.5%;
     background-color: #191919;
-    ;
     display: inline-block;
     box-shadow: 0px 0px 25px rgb(0, 0, 0, .05);
     position: relative;
@@ -1053,133 +858,6 @@ button:hover .index {
     font-weight: 900;
 }
 
-.cursor {
-    height: 50px;
-    width: 50px;
-    display: block;
-    border-radius: 50%;
-    border: 1px solid whitesmoke;
-    background: transparent;
-    pointer-events: none;
-    position: fixed;
-    top: -25px;
-    left: -25px;
-    z-index: 10;
-    opacity: .6;
-    transition: scale .5s ease;
-}
-
-.cursor-small {
-    height: 50px;
-    width: 50px;
-    display: block;
-    border-radius: 50%;
-    border: 1px solid whitesmoke;
-    background: transparent;
-    pointer-events: none;
-    position: fixed;
-    top: -25px;
-    left: -25px;
-    z-index: 10;
-    opacity: .6;
-    transition: scale .4s ease;
-}
-
-#blog {
-    background: #101010;
-    display: none;
-    color: whitesmoke;
-    width: 100%;
-    height: auto;
-}
-
-.blog-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.blogs {
-    height: 420px;
-    width: 40%;
-    margin: 20px;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-}
-
-.blogs .img {
-    height: 80%;
-    width: 100%;
-    overflow: hidden;
-    transition: all .65s ease;
-    position: relative;
-}
-
-.blog-date {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: #c70039;
-    color: whitesmoke;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 400;
-    font-family: poppins;
-    padding: 3px;
-    transition: all .4s ease;
-    width: 25%;
-    height: auto;
-}
-
-.blogs .img img {
-    height: 100%;
-    width: 100%;
-    transition: all .65s ease;
-}
-
-.blog-text {
-    height: 80%;
-    width: 100%;
-    text-align: center;
-    vertical-align: center;
-    font-family: poppins;
-    color: whitesmoke;
-    background-color: #050505;
-    transition: all .5s ease;
-}
-
-.blog-text h3 {
-    font-size: 28px;
-    font-weight: 500;
-    height: 20%;
-    padding: 20px;
-    letter-spacing: 1px;
-}
-
-.blog-text p {
-    font-size: 18px;
-    opacity: .9;
-    font-weight: 400;
-    height: 80%;
-    padding: 30px;
-    letter-spacing: 1px;
-}
-
-.blogs:hover .img {
-    transform: translateY(-70%);
-}
-
-.blogs:hover .blog-text {
-    transform: translateY(-70%);
-}
-
-.blogs a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
 #contact {
     display: none;
     height: auto;
@@ -1225,7 +903,7 @@ button:hover .index {
 .contact-info {
     width: 40%;
     height: 500px;
-    background: url(assets/img/contact-back.jpg);
+    background: url(assets/img/contact1.jfif);
     background-position: center;
     background-size: cover;
     border-radius: 16px;
@@ -1402,94 +1080,6 @@ form button:hover {
     opacity: 1;
 }
 
-.color-changer {
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    right: -150px;
-    top: 40%;
-    z-index: 4;
-    color: black;
-    transition: all .4s ease;
-}
-
-.color-changer-active {
-    right: 0px;
-    transition: all .4s ease;
-}
-
-.color-panel {
-    height: 45px;
-    cursor: pointer;
-    width: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
-    background: whitesmoke;
-}
-
-.color-panel img {
-    height: 40px;
-    width: 40px;
-    padding: 2px;
-    animation: rotate 2s linear infinite;
-}
-
-.colors ul {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    max-width: 150px;
-    text-align: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.colors li {
-    height: 30px;
-    width: 30px;
-    margin: 5px;
-    border-radius: 20%;
-    position: relative;
-    overflow: hidden;
-}
-
-.colors li a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.color-red {
-    background: #c70039;
-}
-
-.color-purple {
-    background: #481380;
-}
-
-.color-green {
-    background: #04A777;
-}
-
-.color-blue {
-    background: #035aa6;
-}
-
-.color-malt {
-    background: #00909e;
-}
-
-.color-orange {
-    background: #dd7631;
-}
-
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -1509,35 +1099,6 @@ form button:hover {
         transform: rotate(360deg);
     }
 }
-
-.color-selector {
-    height: auto;
-    width: 150px;
-    padding: 10px;
-    background: whitesmoke;
-    font-family: poppins;
-    font-size: 16px;
-    display: flex;
-    color: black;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.color-selector li {
-    list-style: none;
-}
-
-/*
-  
-  For devices with smaller width like mobile phone
-  
-  
-  */
-
-
-
-
 
 @media only screen and (max-width: 550px) {
     .header-content {
@@ -1794,10 +1355,6 @@ form button:hover {
         padding: 15px;
     }
 
-    .cursor {
-        display: none;
-    }
-
     .service:hover .service-img img {
         box-shadow: 0px 0px 0px 0px #c70039;
     }
@@ -1810,89 +1367,6 @@ form button:hover {
     .portfolio-image {
         height: 300px;
         width: 90%;
-    }
-
-    #navigation-bar img {
-        height: 80px;
-        position: absolute;
-        top: 15%;
-        left: 2.5%;
-        opacity: .8;
-        transition: all .4s ease;
-        display: none;
-    }
-
-    .blogs {
-        height: auto;
-        width: 90%;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        position: relative;
-    }
-
-    .blogs .img {
-        height: 80%;
-        width: 100%;
-        overflow: hidden;
-        transition: all .65s ease;
-        position: relative;
-    }
-
-    .blog-date {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        color: whitesmoke;
-        font-size: 18px;
-        text-align: center;
-        font-weight: 400;
-        font-family: poppins;
-        padding: 3px;
-        width: 35%;
-        height: auto;
-    }
-
-    .blogs .img img {
-        height: 100%;
-        width: 100%;
-        transition: all .65s ease;
-    }
-
-    .blog-text {
-        height: auto;
-        width: 100%;
-        text-align: center;
-        vertical-align: center;
-        font-family: poppins;
-        color: whitesmoke;
-        background-color: #000000;
-        transition: all .5s ease;
-    }
-
-    .blog-text h3 {
-        font-size: 24px;
-        font-weight: 200;
-        height: 15%;
-        padding: 10px;
-        letter-spacing: 1px;
-    }
-
-    .blog-text p {
-        font-size: 15px;
-        opacity: .9;
-        font-weight: 200;
-        height: 85%;
-        padding: 20px;
-        letter-spacing: 1px;
-    }
-
-    .blogs:hover .img {
-        transform: translateY(0%);
-    }
-
-    .blogs:hover .blog-text {
-        transform: translateY(0%);
     }
 
     .contact-content {
@@ -2342,10 +1816,6 @@ form button:hover {
         padding: 15px;
     }
 
-    .cursor {
-        display: none;
-    }
-
     .service:hover .service-img img {
         box-shadow: 0px 0px 0px 0px #c70039;
     }
@@ -2359,89 +1829,6 @@ form button:hover {
     .portfolio-image {
         height: 380px;
         width: 70%;
-    }
-
-    #navigation-bar img {
-        height: 80px;
-        position: absolute;
-        top: 15%;
-        left: 2.5%;
-        opacity: .8;
-        transition: all .4s ease;
-    }
-
-    .blogs {
-        height: auto;
-        width: 75%;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        position: relative;
-    }
-
-    .blogs .img {
-        height: 60%;
-        width: 100%;
-        overflow: hidden;
-        transition: all .65s ease;
-        position: relative;
-    }
-
-    .blog-date {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        color: whitesmoke;
-        font-size: 18px;
-        text-align: center;
-        font-weight: 400;
-        font-family: poppins;
-        padding: 3px;
-        width: 35%;
-        height: auto;
-    }
-
-    .blogs .img img {
-        height: 100%;
-        width: 100%;
-        transition: all .65s ease;
-    }
-
-    .blog-text {
-        height: auto;
-        width: 100%;
-        text-align: center;
-        vertical-align: center;
-        font-family: poppins;
-        color: whitesmoke;
-        background-color: #050505;
-        padding: 10px;
-        transition: all .5s ease;
-    }
-
-    .blog-text h3 {
-        font-size: 28px;
-        font-weight: 200;
-        height: 15%;
-        padding: 10px;
-        letter-spacing: 1px;
-    }
-
-    .blog-text p {
-        font-size: 17px;
-        opacity: .9;
-        font-weight: 200;
-        height: 85%;
-        padding: 20px;
-        letter-spacing: 1px;
-    }
-
-    .blogs:hover .img {
-        transform: translateY(0%);
-    }
-
-    .blogs:hover .blog-text {
-        transform: translateY(0%);
     }
 
     .contact-content {
@@ -2701,80 +2088,6 @@ form button:hover {
         font-weight: 200;
         font-size: 18px;
         opacity: .8;
-    }
-
-    .blogs {
-        height: 420px;
-        width: 30%;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .blogs .img {
-        height: 80%;
-        width: 100%;
-        overflow: hidden;
-        transition: all .65s ease;
-        position: relative;
-    }
-
-    .blog-date {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        color: whitesmoke;
-        font-size: 18px;
-        text-align: center;
-        font-weight: 400;
-        font-family: poppins;
-        padding: 3px;
-        width: 25%;
-        height: auto;
-    }
-
-    .blogs .img img {
-        height: 100%;
-        width: 100%;
-        transition: all .65s ease;
-    }
-
-    .blog-text {
-        height: 80%;
-        width: 100%;
-        text-align: center;
-        vertical-align: center;
-        font-family: poppins;
-        color: whitesmoke;
-        background-color: #050505;
-        transition: all .5s ease;
-    }
-
-    .blog-text h3 {
-        font-size: 28px;
-        font-weight: 500;
-        height: 20%;
-        padding: 20px;
-        letter-spacing: 1px;
-    }
-
-    .blog-text p {
-        font-size: 18px;
-        opacity: .9;
-        font-weight: 400;
-        height: 80%;
-        padding: 30px;
-        letter-spacing: 1px;
-    }
-
-    .blogs:hover .img {
-        transform: translateY(-70%);
-    }
-
-    .blogs:hover .blog-text {
-        transform: translateY(-70%);
     }
 
     .contact-header {
