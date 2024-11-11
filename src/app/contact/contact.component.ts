@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ContactService } from './contact.service'; // Certifique-se de ter o caminho correto para o serviço
-import { HttpClient } from '@angular/common/http';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -15,12 +14,10 @@ export class ContactComponent {
     body: ''    
   };
 
-  constructor(private http: HttpClient) {}
+  constructor(private contactService: ContactService) {}
 
   sendEmail() {
-    const apiUrl = 'http://localhost:5000/api/contact/send';
-
-    this.http.post(apiUrl, this.contactData).subscribe({
+    this.contactService.sendMessage(this.contactData).subscribe({
       next: () => alert('Mensagem enviada com sucesso!'),
       error: () => alert('Erro ao enviar mensagem. Tente novamente.')
     });
