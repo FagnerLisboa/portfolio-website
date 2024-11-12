@@ -1,16 +1,25 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactService {
-  private apiUrl = `${environment.apiUrl}/api/contact`; // Adicione o endpoint correto aqui
-
-  constructor(private http: HttpClient) {}
+  private serviceId = 'service_contact';
+  private templateId = 'template_j7ru2k2';
+  private userId = 'ErgbHDcTTFYAuPSUR';
 
   sendMessage(contactData: any) {
-    return this.http.post(this.apiUrl, contactData);
+    return emailjs.send(
+      this.serviceId,
+      this.templateId,
+      {
+        from_name: contactData.name,
+        from_email: contactData.email,
+        subject: contactData.subject,
+        message: contactData.body
+      },
+      this.userId
+    );
   }
 }

@@ -7,11 +7,15 @@
             <div class="contact-form">
                 <form id="myForm" (ngSubmit)="sendEmail()" #contactForm="ngForm">
                     <div class="input-line">
-                        <input id="name" type="text" placeholder="Nome" class="input-name" [(ngModel)]="contactData.name" name="name" required>
-                        <input id="email" type="email" placeholder="Email" class="input-name" [(ngModel)]="contactData.email" name="email" required>
+                        <input id="name" type="text" placeholder="Nome" class="input-name"
+                            [(ngModel)]="contactData.name" name="name" required>
+                        <input id="email" type="email" placeholder="Email" class="input-name"
+                            [(ngModel)]="contactData.email" name="email" required>
                     </div>
-                    <input type="text" id="subject" placeholder="Assunto" class="input-subject" [(ngModel)]="contactData.subject" name="subject" required>
-                    <textarea id="body" class="input-textarea" placeholder="Mensagem" [(ngModel)]="contactData.body" name="body" required></textarea>
+                    <input type="text" id="subject" placeholder="Assunto" class="input-subject"
+                        [(ngModel)]="contactData.subject" name="subject" required>
+                    <textarea id="body" class="input-textarea" placeholder="Mensagem" [(ngModel)]="contactData.body"
+                        name="body" required></textarea>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>

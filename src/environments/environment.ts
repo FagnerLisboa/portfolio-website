@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'contactapi-b6fsanbva4edg6h5.brazilsouth-01.azurewebsites.net'
+  apiUrl: ''
 };
 
 /*
