@@ -19,15 +19,16 @@ Este é o meu portfólio pessoal, desenvolvido com **Angular 13.6.11**. Aqui voc
 
 src/
 ├── app/
-│   ├── about/
-│   ├── contact/
+│   ├── about/                # Componente sobre mim
+│   ├── contact/              # Componente de contato com serviço para envio de mensagens
 │   │   └── contact.service.ts
-│   ├── home/
-│   │   └── navbar/
-│   │   └── fooder/     
-│   ├── project/  
-│   ├── app-routing.module.ts/
-│   └── app.component.ts
-│   ├── app.module.ts
+│   ├── home/                 # Componente inicial do portfólio
+│   │   ├── navbar/           # Navbar para navegação no portfólio
+│   │   └── footer/           # Rodapé do portfólio
+│   ├── project/              # Componente de projetos e portfólio
+│   ├── app-routing.module.ts # Módulo de rotas
+│   ├── app.component.ts      # Componente principal da aplicação
+│   └── app.module.ts         # Módulo principal do Angular
 └── assets/
-    └── img/
+    └── img/                  # Imagens usadas no projeto
+
