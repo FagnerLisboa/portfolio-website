@@ -1,19 +1,33 @@
-# PortfolioWebsite
+# Portfólio Pessoal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+Este é o meu portfólio pessoal, desenvolvido com **Angular 13.6.11**. Aqui você pode encontrar informações sobre meus projetos, habilidades, contato e muito mais!
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Home Page**: Apresentação pessoal com animações de rotação de texto.
+- **Seção de Contato**: Formulário de contato com integração para envio de mensagens.
+- **Design Responsivo**: Utilização do Bootstrap para design responsivo, com uma navegação adaptável para dispositivos móveis.
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Frontend**:
+  - Angular 13
+  - Bootstrap 5.3
+  - EmailJS (para envio de e-mails no formulário de contato)
 
-## Build
+## Estrutura do Projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+src/
+├── app/
+│   ├── about/
+│   ├── contact/
+│   │   └── contact.service.ts
+│   ├── home/
+│   │   └── navbar/
+│   │   └── fooder/     
+│   ├── project/  
+│   ├── app-routing.module.ts/
+│   └── app.component.ts
+│   ├── app.module.ts
+└── assets/
+    └── img/

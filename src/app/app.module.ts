@@ -13,6 +13,7 @@ import { TextRotateDirective } from './text-rotate.directive';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ContactComponent,
     NavbarComponent,
-    TextRotateDirective
+    TextRotateDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

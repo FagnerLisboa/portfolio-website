@@ -1080,6 +1080,12 @@ form button:hover {
     opacity: 1;
 }
 
+.copyright {
+    height: 15px;
+    display: inline;;
+    vertical-align: middle;
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
