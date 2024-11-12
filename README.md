@@ -2,6 +2,10 @@
 
 Este é o meu portfólio pessoal, desenvolvido com **Angular 13.6.11**. Aqui você pode encontrar informações sobre meus projetos, habilidades, contato e muito mais!
 
+## Demonstração
+
+Acesse o portfólio online: [Portfólio de Fagner Lisboa](https://fagnerlisboa.github.io/portfolio-website/)
+
 ## Funcionalidades
 
 - **Home Page**: Apresentação pessoal com animações de rotação de texto.
