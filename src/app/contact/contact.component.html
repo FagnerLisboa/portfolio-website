@@ -16,7 +16,7 @@
                         [(ngModel)]="contactData.subject" name="subject" required>
                     <textarea id="body" class="input-textarea" placeholder="Mensagem" [(ngModel)]="contactData.body"
                         name="body" required></textarea>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Enviar</button>
                 </form>
             </div>
             <div class="contact-info">
