@@ -17,18 +17,7 @@ Este é o meu portfólio pessoal, desenvolvido com **Angular 13.6.11**. Aqui voc
 
 ## Estrutura do Projeto
 
-src/
-├── app/
-│   ├── about/                # Componente sobre mim
-│   ├── contact/              # Componente de contato com serviço para envio de mensagens
-│   │   └── contact.service.ts
-│   ├── home/                 # Componente inicial do portfólio
-│   │   ├── navbar/           # Navbar para navegação no portfólio
-│   │   └── footer/           # Rodapé do portfólio
-│   ├── project/              # Componente de projetos e portfólio
-│   ├── app-routing.module.ts # Módulo de rotas
-│   ├── app.component.ts      # Componente principal da aplicação
-│   └── app.module.ts         # Módulo principal do Angular
-└── assets/
-    └── img/                  # Imagens usadas no projeto
+![Print do Portfólio](src/assets/img/screenshot.png)
+
+*Figura 1: Interface principal do portfólio*
 
