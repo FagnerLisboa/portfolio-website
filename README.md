@@ -22,6 +22,3 @@ Acesse o portfólio online: [Portfólio de Fagner Lisboa](https://fagnerlisboa.g
 ## Estrutura do Projeto
 
 ![Print do Portfólio](src/assets/img/screenshot.png)
-
-*Figura 1: Interface principal do portfólio*
-

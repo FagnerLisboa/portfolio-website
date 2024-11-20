@@ -9,13 +9,13 @@ import { EmailJSResponseStatus } from 'emailjs-com';
 })
 export class ContactComponent {
   contactData = {
-    name: '', 
+    name: '',
     email: '',
-    subject: '', 
-    body: ''    
+    subject: '',
+    body: ''
   };
 
-  constructor(private contactService: ContactService) {}
+  constructor(private contactService: ContactService) { }
 
   sendEmail() {
     this.contactService.sendMessage(this.contactData)
