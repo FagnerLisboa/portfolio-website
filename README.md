@@ -1,5 +1,3 @@
-21/11/2024
-
 # Portfólio Pessoal
 
 Este é o meu portfólio pessoal, desenvolvido com **Angular 13.6.11**. Aqui você pode encontrar informações sobre meus projetos, habilidades, contato e muito mais!
