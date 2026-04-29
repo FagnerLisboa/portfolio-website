@@ -22,3 +22,5 @@ Acesse o portfólio online: [Portfólio de Fagner Lisboa](https://fagnerlisboa.g
 ## Estrutura do Projeto
 
 ![Print do Portfólio](src/assets/img/screenshot.png)
+
+Update - 2026
